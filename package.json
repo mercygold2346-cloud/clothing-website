@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "ATELIER NOIR — editorial fashion website",
+  "homepage": "https://mercygold2346-cloud.github.io/clothing-website/",
   "scripts": {
     "start": "serve -l 3000",
     "dev": "serve -l 3000"
