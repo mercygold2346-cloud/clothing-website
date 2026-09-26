@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop — ATELIER NOIR</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="shop">
+  <main>
+    <div class="page-hero-text">
+      <h1>SHOP</h1>
+      <p>A curated collection of modern essentials.</p>
+    </div>
+    <div class="container">
+      <div class="category-nav">
+        <button type="button" class="is-active" data-filter="ALL">ALL</button>
+        <button type="button" data-filter="NEW ARRIVALS">NEW ARRIVALS</button>
+        <button type="button" data-filter="WOMEN">WOMEN</button>
+        <button type="button" data-filter="MEN">MEN</button>
+        <button type="button" data-filter="OUTERWEAR">OUTERWEAR</button>
+        <button type="button" data-filter="TOPS">TOPS</button>
+        <button type="button" data-filter="BOTTOMS">BOTTOMS</button>
+        <button type="button" data-filter="ACCESSORIES">ACCESSORIES</button>
+      </div>
+      <div class="shop-tools">
+        <span>FILTER</span>
+        <label>
+          SORT BY
+          <select id="sort">
+            <option value="featured">Featured</option>
+            <option value="newest">Newest</option>
+            <option value="price-asc">Price, low to high</option>
+            <option value="price-desc">Price, high to low</option>
+          </select>
+        </label>
+      </div>
+      <div class="product-grid" id="shop-grid"></div>
+    </div>
+    <div style="height:120px;"></div>
+  </main>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

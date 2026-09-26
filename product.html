@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product — ATELIER NOIR</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="shop">
+  <main>
+    <div class="container pdp" id="pdp">
+      <div class="gallery" data-gallery></div>
+      <div class="pdp-info">
+        <p class="sku" data-sku>NO. 02</p>
+        <h1 data-name>RELAXED LINEN SHIRT</h1>
+        <p class="price" data-price>$180</p>
+        <p class="lead" data-lead>A relaxed silhouette crafted for everyday wear.</p>
+        <p class="field-label">COLOR</p>
+        <div class="color-row">
+          <span class="color-swatch"><span class="swatch"></span> <span data-color>Natural</span></span>
+        </div>
+        <p class="field-label">SIZE</p>
+        <div class="size-row">
+          <button type="button" data-size="XS">XS</button>
+          <button type="button" data-size="S">S</button>
+          <button type="button" class="is-active" data-size="M">M</button>
+          <button type="button" data-size="L">L</button>
+          <button type="button" data-size="XL">XL</button>
+        </div>
+        <button class="add-to-bag" type="button" data-add>ADD TO BAG</button>
+        <div class="accordions">
+          <details>
+            <summary>DESCRIPTION</summary>
+            <p>Cut with ease through the body and a slightly dropped shoulder. Worn open over a knit, or closed as the day requires. Designed to be lived in, not reserved.</p>
+          </details>
+          <details>
+            <summary>MATERIAL & CARE</summary>
+            <p>100% European linen. Cold wash, hang dry. The cloth will soften and take on the wearer over time.</p>
+          </details>
+          <details>
+            <summary>SIZE GUIDE</summary>
+            <p>The shirt is intended relaxed. For a closer line, consider sizing down. Measurements are taken with the garment laid flat.</p>
+          </details>
+          <details>
+            <summary>SHIPPING & RETURNS</summary>
+            <p>Complimentary shipping on all orders. Returns are accepted within 14 days, unworn, with tags attached.</p>
+          </details>
+        </div>
+      </div>
+    </div>
+    <section class="related container">
+      <div class="section-head">
+        <h2>YOU MAY ALSO LIKE</h2>
+      </div>
+      <div class="product-grid" id="related-grid"></div>
+    </section>
+  </main>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

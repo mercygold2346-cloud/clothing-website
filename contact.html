@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — ATELIER NOIR</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="about">
+  <main>
+    <div class="page-hero-text">
+      <h1>GET<br />IN TOUCH</h1>
+    </div>
+    <div class="container contact-layout">
+      <form class="contact-form" id="contact-form">
+        <label>NAME</label>
+        <input type="text" required />
+        <label>EMAIL</label>
+        <input type="email" required />
+        <label>MESSAGE</label>
+        <textarea required></textarea>
+        <button class="btn btn-dark" type="submit">SEND</button>
+      </form>
+      <div class="contact-meta">
+        <h3>STUDIO</h3>
+        <p>12 Rue des Archives<br />75004 Paris, France</p>
+        <h3>ENQUIRIES</h3>
+        <p>studio@ateliernoir.com<br />+33 1 42 00 00 00</p>
+        <h3>HOURS</h3>
+        <p>Tuesday — Saturday<br />11:00 — 19:00</p>
+      </div>
+    </div>
+  </main>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.getElementById("contact-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      document.getElementById("toast").textContent = "MESSAGE SENT";
+      document.getElementById("toast").classList.add("show");
+      setTimeout(function () {
+        document.getElementById("toast").classList.remove("show");
+      }, 1800);
+      e.target.reset();
+    });
+  </script>
+</body>
+</html>
